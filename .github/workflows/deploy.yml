@@ -20,4 +20,6 @@ jobs:
             cd /home/ec2-user/shri-directory
             git pull origin main
             npm install
+            npm run build
+            aws s3 sync dist/shri-directory/browser/ s3://dist-files-bucket/ --delete
             pm2 restart 1
