@@ -20,4 +20,4 @@ jobs:
             cd /home/ec2-user/shri-directory
             git pull origin main
             npm install
-            pm2 restart angular-app
+            pm2 restart 1
