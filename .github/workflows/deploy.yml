@@ -22,4 +22,4 @@ jobs:
             npm install
             npm run build
             aws s3 sync dist/shri-directory/browser/ s3://dist-files-bucket/ --delete
-            pm2 restart 1
+            pm2 restart angular-app
